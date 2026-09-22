@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hands NGO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Helping<span>Hands</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Together We Can Make a Difference</h1>
+
+            <p>
+                Helping Hands is a non-profit organization working
+                for education, healthcare, environment and community development.
+            </p>
+
+            <a href="#donate" class="btn">Donate Now</a>
+            <a href="#volunteer" class="btn secondary">Become a Volunteer</a>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Who We Are</h3>
+
+                <p>
+                    Helping Hands NGO is dedicated to improving the lives
+                    of underprivileged people and creating a better society.
+                </p>
+
+                <p>
+                    Our team works with communities to provide education,
+                    healthcare support, food assistance and environmental
+                    awareness programs.
+                </p>
+
+                <a href="#programs" class="btn">Our Programs</a>
+            </div>
+
+            <div class="about-box">
+                <div>
+                    <h3>10+</h3>
+                    <p>Years of Service</p>
+                </div>
+
+                <div>
+                    <h3>5000+</h3>
+                    <p>People Helped</p>
+                </div>
+
+                <div>
+                    <h3>200+</h3>
+                    <p>Volunteers</p>
+                </div>
+
+                <div>
+                    <h3>50+</h3>
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Programs -->
+    <section id="programs" class="section programs-section">
+
+        <h2>Our Programs</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📚</div>
+                <h3>Education</h3>
+                <p>
+                    Providing educational support, books and learning
+                    opportunities for underprivileged children.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏥</div>
+                <h3>Healthcare</h3>
+                <p>
+                    Organizing health awareness programs and medical
+                    support for communities.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌱</div>
+                <h3>Environment</h3>
+                <p>
+                    Conducting tree plantation drives and environmental
+                    awareness campaigns.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🍲</div>
+                <h3>Food Support</h3>
+                <p>
+                    Providing food and essential supplies to people
+                    in need.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Volunteer -->
+    <section id="volunteer" class="section">
+
+        <h2>Become a Volunteer</h2>
+
+        <div class="form-container">
+
+            <form id="volunteerForm">
+
+                <input type="text" id="volName"
+                       placeholder="Your Name" required>
+
+                <input type="email" id="volEmail"
+                       placeholder="Email Address" required>
+
+                <input type="tel" id="volPhone"
+                       placeholder="Phone Number" required>
+
+                <select id="volProgram" required>
+                    <option value="">Select Program</option>
+                    <option>Education</option>
+                    <option>Healthcare</option>
+                    <option>Environment</option>
+                    <option>Food Support</option>
+                </select>
+
+                <textarea id="volMessage"
+                          placeholder="Why do you want to volunteer?"
+                          rows="5"></textarea>
+
+                <button type="submit" class="btn">
+                    Register as Volunteer
+                </button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- Donation -->
+    <section id="donate" class="donate-section">
+
+        <div class="donate-content">
+
+            <h2>Support Our Mission</h2>
+
+            <p>
+                Your contribution can help us reach more people
+                and create a positive impact in society.
+            </p>
+
+            <div class="donation-buttons">
+                <button onclick="donate(500)">₹500</button>
+                <button onclick="donate(1000)">₹1000</button>
+                <button onclick="donate(2000)">₹2000</button>
+                <button onclick="donate(5000)">₹5000</button>
+            </div>
+
+            <button class="btn donate-main"
+                    onclick="customDonate()">
+                Make a Donation
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>📍 Chennai, Tamil Nadu, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ helpinghands@example.com</p>
+
+                <p>
+                    We would love to hear from you.
+                    Contact us to learn more about our programs.
+                </p>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input type="text"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Your Email"
+                       required>
+
+                <input type="text"
+                       placeholder="Subject"
+                       required>
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>Helping Hands NGO</h3>
+
+            <p>
+                Working together for a better tomorrow.
+            </p>
+
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Helping Hands NGO. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html> 
